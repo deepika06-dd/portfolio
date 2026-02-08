@@ -10,7 +10,7 @@
 }
 
 .sidebar__hamburger__translate {
-  transform: translateX(300px);
+  transform: translateX(10px);
 }
 
 .sidebar__content {
