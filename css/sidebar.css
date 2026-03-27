@@ -46,7 +46,9 @@
   left: -300px;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: left 500ms ease, box-shadow 0.3s ease;
+  transition:
+    left 500ms ease,
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
