@@ -58,6 +58,15 @@
   pointer-events: auto;
 }
 
+.sidebar__content.slide-in {
+  animation: sidebarSlideIn 0.45s ease forwards;
+}
+
+@keyframes sidebarSlideIn {
+  from { left: -300px; }
+  to { left: 0; }
+}
+
 /* When sidebar is active, slide it in */
 .sidebar__content.active {
   left: 0;
