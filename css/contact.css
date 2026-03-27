@@ -9,8 +9,17 @@
   line-height: 1.4;
   margin-bottom: 15px;
   background-color: #f2f3f7;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  border-color: #2c98f0;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(44, 152, 240, 0.2);
 }
 .contact__textarea {
   resize: vertical;
