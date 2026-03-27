@@ -25,7 +25,7 @@
   resize: vertical;
   height: 130px;
 }
-..contact__button {
+.contact__button {
   cursor: pointer;
   background: linear-gradient(135deg, #2c98f0, #00b6ff);
   color: #fff;
