@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content=":D" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bungee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Sora:wght@100..800&family=VT323&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/work-count.css" />
+  </head>
+  <body>
+    <button id="hamburger" class="sidebar__hamburger" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar__content" id="sidebarContent">
+        <img
+          class="sidebar__image"
+          src="image\profile.jpeg"
+          alt="Profile Image"
+        />
+        <h1 class="sidebar__name">Laxmi Dhamala</h1>
+        <h2 class="sidebar__job">Developer <span>in Nepal</span></h2>
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item">
+            <a href="#hero">home</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#about">about</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#skills">skills</a>
+          </li>
+
+          <li class="sidebar__list__item">
+            <a href="#work-count">work-count</a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <h1 class="hero__job">
+        Hi! <br />
+        I am Laxmi, <br />
+        Aspiring Developer
+      </h1>
+      <h2 class="hero__edu">
+        Electronics, Communication and Information Engineer
+      </h2>
+      <button class="hero__btn">
+        Contact Me <i class="fa fa-download"></i>
+      </button>
+    </section>
+
+    <section id="about" class="section">
+      <span class="section__title">about us</span>
+      <h2 class="section__subtitle">who am i?</h2>
+      <p>
+        Hi, I'm Laxmi, an Electronics, Communication and Information Engineering
+        student with a strong interest in web development and real-world problem
+        solving.I enjoy turning ideas into real, working applications that can
+        solve everyday challenges and make life easier. My background in
+        electronics and communication gives me a unique perspective on how
+        hardware, software, and intelligent systems connect. I'm especially
+        interested in web development, machine learning, and building smart
+        systems that combine creativity with practical impact.I am passionate
+        about learning, improving, and growing as a developer every day.
+      </p>
+      <br />
+      <div class="about__skills">
+        <div class="about__box">
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Graphic design</h3>
+        </div>
+        <div class="about__box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>web design</h3>
+        </div>
+        <div class="about__box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Software</h3>
+        </div>
+        <div class="about__box">
+          <i class="fa-solid fa-mobile"></i>
+          <h3>application</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="work__count" class="section">
+      <p class="section_title">Education</p>
+      <p class="section_subtitle">My Education</p>
+      <span>SEE</span>
+      <span>Jana Jagriti Secondary School</span>
+      <span>+2</span>
+      <span>Sky RIder Secondary College</span>
+      <span>Bachelors</span>
+      <span>NationalCollege Of Engineering(TU:IOE)</span>
+    </section>
+
+    <section id="skills" class="section">
+      <span class="section__title">my speciality</span>
+      <span class="section__subtitle">my skills</span>
+      <div class="skill__box">
+        <div class="skill">
+          <span>HTML5</span>
+          <div class="skill__percent__box">
+            <div class="skill__percent">
+              <span>65%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Machine Learning</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 60%; background: #ec5453; color: #ec5453"
+            >
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 85%; background: #f9bf3f; color: #f9bf3f"
+            >
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>CSS3</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 90%; background: #a84cb8; color: #a84cb8"
+            >
+              <span>90%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 70%; background: #2fa499; color: #2fa499"
+            >
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>SQL</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 80%; background: #4054b2; color: #4054b2"
+            >
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section__subtitle">contact</h2>
+      <form
+        action=""
+        id="contactForm"
+        class="contact__form"
+        onsubmit="submitForm(event)"
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          name="name"
+          class="contact__input"
+        />
+        <textarea
+          id="message"
+          class="contact__textarea"
+          name="message"
+          placeholder="Message"
+          rows="4"
+        ></textarea>
+        <input type="email" name="email" placeholder=" Email" /><br /><br />
+        <button class="contact__button" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact__information">
+        <div>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 576 512"
+            color="rgb(44, 152, 240)"
+            style="color: rgb(44, 152, 240)"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M565.6 36.2C572.1 40.7 576 48.1 576 56V392c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456V120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5V421.2l120-45.7V90.8L48 136.5zM360 422.7V137.3l-144-48V374.7l144 48zm48-1.5l120-45.7V90.8L408 136.5V421.2z"
+            ></path>
+          </svg>
+        </div>
+        <h2>Baneshwor,Kathmandu, Nepal</h2>
+        <br /><br />
+      </div>
+      <div class="contact__information">
+        <div>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            color="rgb(44, 152, 240)"
+            style="color: rgb(44, 152, 240)"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+            ></path>
+          </svg>
+        </div>
+        <h2><a href="tel:+9779749225880">+977 97888521019</a></h2>
+        <br /><br />
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const sidebarContent = document.getElementById("sidebarContent");
+      const body = document.body;
+
+      // Toggle sidebar when hamburger is clicked
+      hamburger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        sidebarContent.classList.toggle("active");
+        body.classList.toggle("sidebar-open");
+      });
+
+      // Close sidebar when a link is clicked
+      document.querySelectorAll(".sidebar__list__item a").forEach((link) => {
+        link.addEventListener("click", () => {
+          sidebarContent.classList.remove("active");
+          body.classList.remove("sidebar-open");
+        });
+      });
+
+      // Close sidebar when clicking outside
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".sidebar") && !e.target.closest("#hamburger")) {
+          sidebarContent.classList.remove("active");
+          body.classList.remove("sidebar-open");
+        }
+      });
+    </script>
+  </body>
+</html>

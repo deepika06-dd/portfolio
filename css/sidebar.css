@@ -1,0 +1,269 @@
+.sidebar__hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  font-size: 28px;
+  background: white;
+  border: 2px solid #2c98f0;
+  color: #333;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  transition: all 300ms ease;
+}
+
+.sidebar__hamburger:hover {
+  color: #2c98f0;
+  background: #f0f8ff;
+  transform: scale(1.05);
+}
+
+.sidebar__hamburger:active {
+  transform: scale(0.95);
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* SIDEBAR CONTENT */
+.sidebar__content {
+  width: 300px;
+  height: 100vh;
+  background: #f2f3f7;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: left 500ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+
+/* When sidebar is active, slide it in */
+.sidebar__content.active {
+  left: 0;
+  pointer-events: auto;
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}
+
+/* Only move SECTIONS to the right */
+body.sidebar-open section {
+  transform: translateX(300px);
+  transition: transform 500ms ease;
+}
+
+/* Move hamburger to the right with content */
+body.sidebar-open .sidebar__hamburger {
+  transform: translateX(300px);
+  transition: transform 500ms ease;
+}
+
+/* DO NOT MOVE THE SIDEBAR ITSELF! */
+body.sidebar-open .sidebar,
+body.sidebar-open .sidebar__content {
+  transform: none;
+}
+
+.sidebar__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: 4px solid #2c98f0;
+  box-shadow: 0 4px 12px rgba(44, 152, 240, 0.3);
+  flex-shrink: 0;
+}
+
+.sidebar__name {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.sidebar__job {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2c98f0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.sidebar__job > span {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__list__item {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.sidebar__list__item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+.sidebar__list__item:hover {
+  background: rgba(44, 152, 240, 0.08);
+}
+
+.sidebar__list__item a:hover {
+  color: #2c98f0;
+}
+
+.sidebar__list__item::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #2c98f0;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all ease 0.3s;
+}
+
+.sidebar__list__item:hover::after {
+  width: 60%;
+}
+
+.sidebar__copyright {
+  padding: 0 20px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.sidebar__copyright > span {
+  color: #2c98f0;
+  font-weight: 600;
+}
+
+/* Mobile and Desktop - Hamburger always visible */
+@media screen and (max-width: 768px) {
+  .sidebar__hamburger {
+    display: block;
+  }
+
+  .sidebar__content {
+    left: -300px;
+  }
+
+  .sidebar__content.active {
+    left: 0;
+  }
+}
+
+/* Desktop - Hamburger still visible (per user request) */
+@media screen and (min-width: 769px) {
+  .sidebar__hamburger {
+    display: block;
+  }
+
+  .sidebar__content {
+    left: -300px;
+  }
+
+  .sidebar__content.active {
+    left: 0;
+  }
+
+  /* Push sections when sidebar opens on desktop too */
+  body.sidebar-open section {
+    transform: translateX(300px);
+  }
+
+  body.sidebar-open .sidebar__hamburger {
+    transform: translateX(300px);
+  }
+}
+
+/* Very Large Desktop - Optional permanent sidebar */
+@media screen and (min-width: 1400px) {
+  /* Uncomment below to make sidebar permanent on very large screens */
+
+  /* .sidebar__content {
+    left: 0 !important;
+  }
+  
+  body {
+    margin-left: 300px;
+  }
+  
+  body.sidebar-open section {
+    transform: translateX(0);
+  }
+  
+  body.sidebar-open .sidebar__hamburger {
+    transform: translateX(0);
+  } */
+}
+
+.sidebar__content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar__content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar__content::-webkit-scrollbar-thumb {
+  background: #2c98f0;
+  border-radius: 3px;
+}
+
+.sidebar__content::-webkit-scrollbar-thumb:hover {
+  background: #1e7fc7;
+}
