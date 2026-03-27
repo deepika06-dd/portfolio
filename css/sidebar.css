@@ -19,6 +19,7 @@
   color: #2c98f0;
   background: #f0f8ff;
   transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(44, 152, 240, 0.3);
 }
 
 .sidebar__hamburger:active {

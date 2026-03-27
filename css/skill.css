@@ -24,10 +24,16 @@
 .skill__percent {
   width: 75%;
   height: 6px;
-  background: #2c98f0;
+  background: linear-gradient(90deg, #2c98f0, #00d4ff);
   border-radius: 8px;
   position: relative;
   color: #2c98f0;
+  animation: progressBar 0.8s ease;
+}
+
+@keyframes progressBar {
+  from { width: 0%; }
+  to { width: 75%; }
 }
 .skill__percent::after {
   content: "";

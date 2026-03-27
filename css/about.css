@@ -15,6 +15,13 @@
   padding: 24px;
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   margin-bottom: 50px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about__box:hover {
+  transform: translateY(-5px);
 }
 .about__box > i {
   margin-bottom: 20px;
