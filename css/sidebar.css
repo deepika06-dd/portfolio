@@ -40,15 +40,16 @@
 .sidebar__content {
   width: 300px;
   height: 100vh;
-  background: #f2f3f7;
+  background: linear-gradient(180deg, #f2f3f7 0%, #dce7f5 100%);
   position: fixed;
   top: 0;
   left: -300px;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: left 500ms ease;
+  transition: left 500ms ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
   align-items: center;
   z-index: 50;
   box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
